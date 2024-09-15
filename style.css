@@ -1,0 +1,242 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yatay kaydırmayı gizler */
+}
+
+.container {
+    background-image: url(1.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: rgba(22, 112, 214, 0.4);
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 8px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Times New Roman';
+    display: inline-block;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #ff6e00;
+    border-radius: 2px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+    text-align: center;
+    display: flex; /* Flexbox kullanarak hizalamak için */
+    flex-direction: column; /* Dikey hizalama */
+    align-items: center; /* Yatayda ortalar */
+}
+
+.center h1 {
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.center h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.center .buttons {
+    display: flex; /* Flexbox kullanarak hizalamak için */
+    justify-content: center; /* Yatayda ortalar */
+    gap: 15px; /* Butonlar arasında boşluk bırakır */
+    margin: 35px 0; /* Yukarı ve aşağı margin */
+}
+
+.buttons button {
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background: rgb(207,96,88);
+    border: solid 1px red;
+    cursor: pointer;
+    outline: none;
+    border-radius: 45px;
+    transition: background .5s;
+}
+
+.buttons button:hover {
+    background: #fff;
+}
+
+/* Hakkımda Sayfası İçin Stil */
+.aboutme {
+    padding: 20px;
+    text-align: center;
+}
+
+.aboutme h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutme p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.aboutme img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* İletişim Sayfası Stilleri */
+.contact {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Hafif beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact form button {
+    background: #ff6e00;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background .3s;
+}
+
+.contact form button:hover {
+    background: #e55b00;
+}
+
+/* İletişim Sayfası Stilleri */
+.contact {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Hafif beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact .social-media a {
+    font-size: 18px;
+    color: #ff6e00;
+    text-decoration: none;
+}
+
+.contact .social-media a:hover {
+    text-decoration: underline;
+}
+
+.contact a {
+    font-size: 18px;
+    color: #ff6e00;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
